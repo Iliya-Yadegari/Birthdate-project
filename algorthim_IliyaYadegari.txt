@@ -12,7 +12,7 @@ if results is false
 	print 'Error 02: Wrong month entered'
 	terminate the program
 if results are true
-	days_in_month index 2 = 29
+	days_in_month[2] = 29
 if results are false
 	print "Error 03: wrong day entered"
 	terminate the program
@@ -29,9 +29,19 @@ return status
 ######################################################################################
 ####          A description of how sanitize(obj1,obj2) function works             ####
 ######################################################################################
+initialize count as char_count_array(obj2)
+initialize ip_ind as 0
+initialize res_ind as 0
+initialize str_lst as lst_conv(obj1)
 
-
-
+while ip_ind doesn't equal the numbers of items in str_lst
+	initialize temp = str_lst[ip_ind]
+	if count[unicode of temp] equals 0
+		str_list[res_ind] = str_list[ip_find]
+		res_ind plusequals 1
+	ip_ind plusequals 1
+	initialize results as string_conv(str_list[0:res_ind])
+	return results
 ######################################################################################
 ####         A description of how size_check(obj, intobj) function works          ####
 ######################################################################################
