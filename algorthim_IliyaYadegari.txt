@@ -45,9 +45,10 @@ while ip_ind doesn't equal the numbers of items in str_lst
 ######################################################################################
 ####         A description of how size_check(obj, intobj) function works          ####
 ######################################################################################
-
-
-
+if the number of items in obj equals intobj
+	return True
+else
+	return False
 ######################################################################################
 ####         A description of how range_check(obj1, obj2) function works          ####
 ######################################################################################
