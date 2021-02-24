@@ -20,19 +20,19 @@ def leap_year(obj):
         status = 'This is not a leap year'
     return status
 
-NO_OF_CHARS = 256
+numbers_of_characters = 256
  
-def toList(obj1):
+def lst_conv(obj1):
     temp = []
-    for x in obj1:
-        temp.append(x)
+    for i in obj1:
+        temp.append(i)
     return temp
 
-def toString(List):
-    return ''.join(List)
+def string_conv(lst):
+    return ''.join(lst)
 
-def getCharCountArray(obj1):
-    count = [0] * NO_OF_CHARS
+def char_count_array(obj1):
+    count = [0] * numbers_of_characters
     for i in obj1:
         count[ord(i)] += 1
     return count
@@ -42,11 +42,11 @@ def sanitize(obj1,obj2):
     '''
     put your function level docstring here ...
     '''
-    count = getCharCountArray(obj2)
+    count = char_count_array(obj2)
     ip_ind = 0
     res_ind = 0
     temp = ''
-    str_list = toList(obj1)
+    str_list = lst_conv(obj1)
  
     while ip_ind != len(str_list):
         temp = str_list[ip_ind]
@@ -54,7 +54,7 @@ def sanitize(obj1,obj2):
             str_list[res_ind] = str_list[ip_ind]
             res_ind += 1
         ip_ind += 1
-    results = toString(str_list[0:res_ind])
+    results = string_conv(str_list[0:res_ind])
     return results
 
 def size_check(obj, intobj):
