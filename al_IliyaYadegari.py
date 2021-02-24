@@ -59,11 +59,12 @@ def sanitize(obj1,obj2):
 
 def size_check(obj, intobj):
     '''
-    put your function level docstring here ..
+    This function sees if the number of items in obj matches intobj
     '''
-    ...
-
-    return status
+    if len(obj) == intobj:
+        return True
+    else:
+        return False
 
 def range_check(obj1, obj2):
     '''
