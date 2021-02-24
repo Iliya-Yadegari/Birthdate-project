@@ -1,0 +1,65 @@
+
+######################################################################################
+####              Algorithm - A description of how main program works             ####
+######################################################################################
+if _name_ equals _main_
+	input your date birth
+
+if the results are false
+	print 'Error 09: wrong data entered'
+	terminate the program
+if results is false
+	print 'Error 02: Wrong month entered'
+	terminate the program
+if results are true
+	days_in_month index 2 = 29
+if results are false
+	print "Error 03: wrong day entered"
+	terminate the program
+print new_dob
+######################################################################################
+####             A description of how leap_year(obj) function works               ####
+######################################################################################
+if the remainder of obj % 4 = 0
+	initialize status as 'This is a leap year'
+else:
+	initialize status as 'This is not a leap year'
+return status
+
+######################################################################################
+####          A description of how sanitize(obj1,obj2) function works             ####
+######################################################################################
+
+
+
+######################################################################################
+####         A description of how size_check(obj, intobj) function works          ####
+######################################################################################
+
+
+
+######################################################################################
+####         A description of how range_check(obj1, obj2) function works          ####
+######################################################################################
+
+
+
+######################################################################################
+####              A description of how usage() function works                     ####
+######################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
