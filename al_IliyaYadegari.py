@@ -77,15 +77,15 @@ def range_check(obj1, obj2):
     
 def usage():    
     '''
-    put your function level docstring here ...
+    If there is something wrond with the input print this
     '''
-    ...
-    return status
+    if len(user_date) == 8:
+        print('Usage: YYYYMMDD|YYYY/MM/DD|YYYY-MM-DD|YYYY.MM.DD')
 
 if __name__ == "__main__":
    # step 1
    user_date = input('Please Enter your Date of Birth: ')
-   
+   usage()
    # step 2
    month_name = ['Jan','Feb','Mar','Apr','May','Jun',
                  'Jul','Aug','Sep','Oct','Nov','Dec']
