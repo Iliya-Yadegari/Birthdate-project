@@ -59,7 +59,8 @@ else
 ######################################################################################
 ####              A description of how usage() function works                     ####
 ######################################################################################
-
+if the number of letters within user_date equal 8
+	print 'Usage: YYYYMMDD|YYYY/MM/DD|YYYY-MM-DD|YYYY.MM.DD'
 
 
 
