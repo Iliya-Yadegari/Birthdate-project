@@ -40,7 +40,7 @@ def char_count_array(obj1):
 
 def sanitize(obj1,obj2):
     '''
-    put your function level docstring here ...
+    This function removes the letters in obj2 from obj1 then returns the new obj1
     '''
     count = char_count_array(obj2)
     ip_ind = 0
