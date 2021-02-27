@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 '''
 Author: "Iliya Yadegari"
-The python code in this file (a1_Iliya_Yadegari.py) is original work written by
+The python code in this file (a1_IliyaYadegari.py) is original work written by
 "Iliya Yadegari". No code in this file is copied from any other source 
 except those provided by the teacher, including any person, 
 textbook, or on-line resource. I have not shared this python script 
@@ -42,20 +42,7 @@ def sanitize(obj1,obj2):
     '''
     This function removes the letters in obj2 from obj1 then returns the new obj1
     '''
-    count = char_count_array(obj2)
-    ip_ind = 0
-    res_ind = 0
-    temp = ''
-    str_list = lst_conv(obj1)
- 
-    while ip_ind != len(str_list):
-        temp = str_list[ip_ind]
-        if count[ord(temp)] == 0:
-            str_list[res_ind] = str_list[ip_ind]
-            res_ind += 1
-        ip_ind += 1
-    results = string_conv(str_list[0:res_ind])
-    return results
+
 
 def size_check(obj, intobj):
     '''
@@ -77,10 +64,10 @@ def range_check(obj1, obj2):
     
 def usage():    
     '''
-    If there is something wrond with the input print this
+    If there is something wrong with the input print this
     '''
-    if len(user_date) == 8:
-        print('Usage: YYYYMMDD|YYYY/MM/DD|YYYY-MM-DD|YYYY.MM.DD')
+
+    print('Usage: YYYYMMDD|YYYY/MM/DD|YYYY-MM-DD|YYYY.MM.DD')
 
 if __name__ == "__main__":
    # step 1
