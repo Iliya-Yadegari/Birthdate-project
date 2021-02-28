@@ -42,7 +42,12 @@ def sanitize(obj1,obj2):
     '''
     This function removes the letters in obj2 from obj1 then returns the new obj1
     '''
-
+    sanitized_str = ''
+    
+    for i in obj1:
+        if i in obj2:
+            sanitized_str = sanitized_str + i
+    return sanitized_str
 
 def size_check(obj, intobj):
     '''
