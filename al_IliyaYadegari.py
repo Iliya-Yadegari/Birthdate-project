@@ -15,27 +15,9 @@ def leap_year(obj):
     If there is no remainder return This is a leap year else This is not a leap year.
     '''
     if obj % 4 == 0:
-        status = 'This is a leap year'
+        return True
     else:
-        status = 'This is not a leap year'
-    return status
-
-numbers_of_characters = 256
- 
-def lst_conv(obj1):
-    temp = []
-    for i in obj1:
-        temp.append(i)
-    return temp
-
-def string_conv(lst):
-    return ''.join(lst)
-
-def char_count_array(obj1):
-    count = [0] * numbers_of_characters
-    for i in obj1:
-        count[ord(i)] += 1
-    return count
+        return False
 
 
 def sanitize(obj1,obj2):
@@ -48,6 +30,7 @@ def sanitize(obj1,obj2):
         if i in obj2:
             sanitized_str = sanitized_str + i
     return sanitized_str
+
 
 def size_check(obj, intobj):
     '''
