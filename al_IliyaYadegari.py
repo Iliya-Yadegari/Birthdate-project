@@ -7,18 +7,18 @@ except those provided by the teacher, including any person,
 textbook, or on-line resource. I have not shared this python script 
 with anyone or anything except for submission for grading. 
 '''
-import os
 import sys
 
 def leap_year(obj):
     '''
     If there is no remainder return This is a leap year else This is not a leap year.
     '''
-    if obj % 4 == 0:
+    if int(obj) % 4 == 0 and int(obj) % 100 != 0:
+        return True
+    elif int(obj) % 4 == 0 and int(obj) % 100 == 0 and int(obj) % 400 == 0:
         return True
     else:
         return False
-
 
 def sanitize(obj1,obj2):
     '''
@@ -30,7 +30,6 @@ def sanitize(obj1,obj2):
         if i in obj2:
             sanitized_str = sanitized_str + i
     return sanitized_str
-
 
 def size_check(obj, intobj):
     '''
@@ -60,7 +59,7 @@ def usage():
 if __name__ == "__main__":
    # step 1
    user_date = input('Please Enter your Date of Birth: ')
-   usage()
+
    # step 2
    month_name = ['Jan','Feb','Mar','Apr','May','Jun',
                  'Jul','Aug','Sep','Oct','Nov','Dec']
@@ -100,9 +99,9 @@ if __name__ == "__main__":
    if result == False:
        print("Error 03: wrong day entered")
        sys.exit()
-   
+
    # step 7
    new_dob = str(month_name[month - 1])+' '+ str(day)+', '+str(year)
    
    # step 8
-   print("Your date of birth is:", new_dob)  
+   print("Your date of birth is:", new_dob)
