@@ -42,9 +42,9 @@ def size_check(obj, intobj):
 
 def range_check(obj1, obj2):
     '''
-    This function checks that obj1 is in range of obj2[0] and obj[1]
+    This function checks that obj1 is in range of obj2[0] and obj2[1]
     '''
-    if obj1 in range(obj2[0],obj2[1]):
+    if obj1 in range(obj2[0],obj2[1]+1):
         return True
     else:
         return False
